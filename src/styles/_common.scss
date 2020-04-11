@@ -1,0 +1,117 @@
+@import "variables";
+@import "mixins";
+
+body, html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  color: $dark;
+}
+
+.wrapper, #__next {
+  height: 100%;
+}
+
+.page-wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-inner {
+  flex: 1 1;
+}
+
+.image-bg {
+  position: relative;
+
+  &__bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.section {
+  margin: 80px 0;
+
+  @include mq(767px) {
+    margin: 40px 0;
+  }
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &--no-bottom-margin {
+    margin-bottom: 0;
+  }
+}
+
+.block-title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 40px;
+
+  @include mq(767px) {
+    font-size: 20px;
+    line-height: normal;
+    margin-bottom: 25px;
+  }
+}
+
+.block {
+  &-with-padding {
+    padding: 60px 0;
+
+    @include mq(767px) {
+      padding: 30px 0;
+    }
+  }
+
+  &-bg {
+    &--gray {
+      background: $light-gray;
+    }
+
+    &--secondary {
+      background: $secondary;
+    }
+  }
+}
+
+.page-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+
+  @include mq(767px) {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+.page-subtitle {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  margin-top: 10px;
+
+  @include mq(767px) {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}

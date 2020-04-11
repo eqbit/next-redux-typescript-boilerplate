@@ -1,0 +1,50 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "lib": ["dom", "dom.iterable", "esnext"],
+        "allowJs": true,
+        "skipLibCheck": true,
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "noEmit": true,
+        "esModuleInterop": true,
+        "module": "esnext",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "jsx": "preserve",
+        "baseUrl": ".",
+        "paths": {
+            "@actions": ["src/actions"],
+            "@components/*": ["src/components/*"],
+            "@components": ["src/components"],
+            "@constants": ["src/constants"],
+            "@constants/*": ["src/constants/*"],
+            "@interfaces": ["src/interfaces"],
+            "@interfaces/*": ["src/interfaces/*"],
+            "@pages/*": ["pages/*"],
+            "@reducers": ["src/redux/reducers"],
+            "@reducers/*": ["src/redux/reducers/*"],
+            "@redux": ["src/redux"],
+            "@redux/*": ["src/redux/*"],
+            "@server/*": ["server/*"],
+            "@services": ["src/services"],
+            "@services/*": ["src/services/*"],
+            "@static/*": ["static/*"],
+            "@styles/*": ["src/styles/*"],
+            "@svg/*": ["static/images/svg/*"]
+        }
+    },
+    "exclude": [
+        "node_modules",
+        "dist",
+        ".next",
+        "out",
+        "next.config.js",
+        ".babelrc",
+        "bundles",
+        "coverage",
+        "test/*"
+    ],
+    "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
+}

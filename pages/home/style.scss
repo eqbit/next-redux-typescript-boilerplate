@@ -1,0 +1,102 @@
+@import "../../src/styles/variables";
+@import "../../src/styles/mixins";
+
+.home-top-screen {
+
+
+  &__row {
+    display: flex;
+
+    @include mq(767px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__block {
+    padding: 50px 60px;
+    width: calc(50% + 80px);
+
+    @include mq(767px) {
+      width: 100%;
+    }
+
+    &--light {
+      background: rgba(#FFFFFF, .9);
+      margin-right: -5%;
+      clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
+      transition: .3s;
+
+      &:hover {
+        background: rgba(#FFFFFF, .95);
+      }
+
+      @include mq(767px) {
+        padding: 30px 30px 50px;
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+        margin: 0;
+      }
+    }
+
+    &--blue {
+      background: rgba($secondary, .9);
+      color: #FFF;
+      margin-left: -5%;
+      clip-path: polygon(20% 0, 100% 0%, 100% 99%, 0% 100%);
+      text-align: right;
+      transition: .3s;
+
+      &:hover {
+        background: rgba($secondary, .95);
+      }
+
+      .home-top-screen__text {
+        margin-left: auto;
+      }
+
+      @include mq(767px) {
+        padding: 50px 30px 30px;
+        clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+        margin: -20px 0 0;
+      }
+    }
+  }
+
+  &__digits {
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 75px;
+
+    @include mq(767px) {
+      font-size: 32px;
+      line-height: normal;
+    }
+  }
+
+  &__text {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    max-width: 380px;
+    min-height: 65px;
+    margin-top: 10px;
+
+    @include mq(767px) {
+      font-size: 14px;
+      min-height: unset;
+
+      br {
+        display: none
+      }
+    }
+  }
+
+  &__btn {
+    margin-top: 30px;
+
+    @include mq(767px) {
+      margin-top: 20px;
+      width: 100%;
+    }
+  }
+}
+

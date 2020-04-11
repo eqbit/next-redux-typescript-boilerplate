@@ -1,0 +1,23 @@
+.rating-stars {
+  position: relative;
+  width: 50px;
+  height: 10px;
+
+  &__white {
+    display: block;
+  }
+
+  &-filled {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    overflow: hidden;
+
+    &__img {
+      max-width: unset;
+      height: 10px;
+      display: block;
+    }
+  }
+}

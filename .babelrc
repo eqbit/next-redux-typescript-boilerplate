@@ -1,0 +1,25 @@
+{
+    "presets": ["next/babel"],
+    "plugins": [
+        [
+            "module-resolver",
+            {
+                "root": ["./"],
+                "alias": {
+                    "@actions": "./src/actions",
+                    "@components": "./src/components",
+                    "@constants": "./src/constants",
+                    "@interfaces": "./src/interfaces",
+                    "@pages": "./pages",
+                    "@reducers": "./src/redux/reducers",
+                    "@redux": "./src/redux",
+                    "@services": "./src/services",
+                    "@server": "./server",
+                    "@static": "./static",
+                    "@svg": "./static/images/svg",
+                    "@styles": "./src/styles"
+                }
+            }
+        ]
+    ]
+}

@@ -1,0 +1,41 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.footer {
+  background: $dark;
+  padding: 60px 0 30px;
+  color: #FFF;
+  font-size: 14px;
+  line-height: 150%;
+
+  @include mq(767px) {
+    padding: 20px 0 10px;
+
+    > .container > .row > [class*=col-] {
+      margin: 20px 0;
+    }
+  }
+
+  &-info {
+    &__age {
+      display: flex;
+      align-items: center;
+      margin-top: 32px;
+
+      svg {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  &-contacts {
+    @include mq(768px, min) {
+      text-align: right;
+    }
+
+    &__phone {
+      display: block;
+      margin-top: 20px;
+    }
+  }
+}
