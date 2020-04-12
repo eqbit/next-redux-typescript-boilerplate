@@ -1,5 +1,5 @@
-import { HomePage } from '@interfaces';
+import { IHomePage } from '@interfaces';
 
 export interface IStore {
-  home: HomePage.State;
+  home: IHomePage.State;
 }

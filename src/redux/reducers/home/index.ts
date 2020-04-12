@@ -2,7 +2,8 @@ import { HOME } from '@constants';
 import { IAction, IHomePage } from '@interfaces';
 
 const initialState: IHomePage.State = {
-  title: ''
+  title: '',
+  content: ''
 };
 
 export const HomeReducer = (
@@ -18,7 +19,8 @@ export const HomeReducer = (
 
     case HOME.RESET:
       return {
-        title: ''
+        title: '',
+        content: ''
       };
 
     default:

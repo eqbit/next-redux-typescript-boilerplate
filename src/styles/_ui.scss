@@ -1,68 +1,12 @@
 @import "variables";
 @import "mixins";
 
-.btn {
-  cursor: pointer;
-  text-align: center;
-  transition: .3s;
-  padding: 15px 50px;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 21px;
-
-  &__login {
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 18px;
-    display: flex;
-    align-items: center;
-    padding: 0 15px;
-
-
-    svg {
-      margin-right: 4px;
-    }
-
-    @include mq(767px) {
-      padding: 0 8px;
-      font-size: 12px;
-    }
-  }
-
-  &--primary {
-    background: $primary;
-    color: #FFF;
-
-    &:hover {
-      background: darken($primary, 10);
-    }
-  }
-
-  &--secondary {
-    background: $secondary;
-    color: #FFF;
-
-    &:hover {
-      background: darken($secondary, 10);
-    }
-  }
-
-  &--light-gray {
-    background: $light-gray;
-    color: #333;
-
-    &:hover {
-      background: darken($light-gray, 10);
-    }
-  }
-}
-
 .track-horizontal {
   position: absolute;
   height: 6px;
   bottom: 2px;
   border-radius: 3px;
-  background: #e9ecf7;
+  background: $light-gray;
   width: 1230px;
   max-width: 100%;
   left: 0;

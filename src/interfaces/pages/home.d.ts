@@ -1,6 +1,7 @@
 declare namespace IHomePage {
   interface State {
     title: string;
+    content: string;
   }
 
   namespace Actions {

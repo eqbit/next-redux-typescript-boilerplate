@@ -1,0 +1,13 @@
+@import "variables";
+
+$grid-gutter-width: 20px;
+$container-max-widths: (
+  md: 720px,
+  lg: 960px,
+  xl: 1300px
+);
+$blue: $primary;
+$link-color: inherit;
+$link-hover-color: inherit;
+
+@import "node_modules/bootstrap/scss/bootstrap";

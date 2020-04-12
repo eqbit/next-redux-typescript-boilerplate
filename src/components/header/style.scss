@@ -1,72 +1,8 @@
 @import "../../styles/variables";
 @import "../../styles/mixins";
 
-header {
-  position: relative;
-}
-
-.top-header {
-  &__row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0;
-  }
-
-  &__area-select {
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 18px;
-    border-bottom: 1px dashed;
-  }
-}
-
-.bottom-header {
-  background: $dark;
-
-  &__logo {
-    display: flex;
-    align-items: center;
-
-    @include mq(767px) {
-      transform: scale(0.5) translateX(-85px);
-    }
-  }
-
-  &__row {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 0;
-  }
-}
-
-.header-menu {
-  &__list {
-    display: flex;
-  }
-
-  &__item {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 18px;
-    color: #FFFFFF;
-    text-align: center;
-
-    a {
-      display: block;
-      min-width: 120px;
-      padding: 10px 15px;
-      background: rgba(243, 243, 243, 0.05);
-      transition: .2s;
-
-      &:hover {
-        background: rgba(243, 243, 243, 0.1);
-      }
-    }
-
-    & + & {
-      margin-left: 2px;
-    }
-  }
+.header {
+  padding: 30px 0;
+  font-size: 24px;
+  font-weight: bold;
 }

@@ -13,7 +13,7 @@ const Home: NextPage = () => {
     <PageWrapper title={home.title}>
       <section className="section block-with-padding">
         <div className="container">
-          {home.title}
+          {home.content}
         </div>
       </section>
     </PageWrapper>

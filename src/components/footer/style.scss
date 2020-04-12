@@ -15,27 +15,4 @@
       margin: 20px 0;
     }
   }
-
-  &-info {
-    &__age {
-      display: flex;
-      align-items: center;
-      margin-top: 32px;
-
-      svg {
-        margin-right: 10px;
-      }
-    }
-  }
-
-  &-contacts {
-    @include mq(768px, min) {
-      text-align: right;
-    }
-
-    &__phone {
-      display: block;
-      margin-top: 20px;
-    }
-  }
 }
